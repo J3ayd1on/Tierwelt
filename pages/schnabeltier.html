@@ -1,0 +1,65 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Schnabeltier – Kurzinfos</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:24px;line-height:1.5}
+    .wrap{max-width:1000px;margin:0 auto}
+    .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    a.back{font-weight:600;text-decoration:none;color:#0a6}
+    /* Bild links, Text rechts – auf ALLEN Bildschirmbreiten */
+    .card{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      grid-template-areas:"bild text";
+      gap:20px;align-items:start;border:1px solid #eee;border-radius:12px;padding:18px
+    }
+    /* Zuordnung: erstes DIV = Text (rechts), zweites DIV = Bild (links) */
+    .card>div:first-child{grid-area:text}
+    .card>div:last-child{grid-area:bild}
+    img{width:100%;height:auto;border-radius:10px}
+    /* KEIN Umbruch mehr auf eine Spalte – Bild bleibt links */
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <h1>Schnabeltier</h1>
+      <!-- Liegt diese Datei in /pages/, führt ../ zur Startseite im Projekt-Root -->
+      <a class="back" href="../index.html">Zurück zur Startseite</a>
+    </div>
+
+    <section class="card">
+      <!-- RECHTS: Text (durch CSS in Spalte 2) -->
+      <div>
+        <h2>Steckbrief</h2>
+        <p>Das Schnabeltier (Platypus) ist ein eierlegendes Säugetier aus Australien. Es lebt in Süßgewässern
+           und kombiniert Merkmale von Säugetieren, Vögeln und Reptilien.</p>
+
+        <h3>Merkmale</h3>
+        <ul>
+          <li>Breiter, weicher „Enten“-Schnabel mit Elektrorezeption</li>
+          <li>Dichter Fellmantel, flacher Schwanz als Fettspeicher</li>
+          <li>Schwimmhäute an den Vorderpfoten; Männchen mit Giftsporn</li>
+        </ul>
+
+        <h3>Ernährung & Leben</h3>
+        <p>Es jagt Insektenlarven, Krebstiere und Würmer, die es im Schlamm
+           ertastet. Schnabeltiere graben Röhren am Ufer und sind vor allem dämmerungs- und nachtaktiv.</p>
+
+        <h3>Besonderheiten</h3>
+        <ul>
+          <li>Zählt zu den Kloakentieren (Monotremen) – legt Eier, säugt aber den Nachwuchs</li>
+          <li>Ortung der Beute über elektrische Signale mit dem Schnabel</li>
+        </ul>
+      </div>
+
+      <!-- LINKS: Bild -->
+      <div>
+        <img src="../img/aaron-de-wit-bppVpQE5-H4-unsplash.jpg" alt="Schnabeltier schwimmt im Wasser">
+      </div>
+    </section>
+  </div>
+</body>
+

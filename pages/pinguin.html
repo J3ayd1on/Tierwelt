@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pinguin – Kurzinfos</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:24px;line-height:1.5} /* gibt dem body element einen abstand vom rand */
+
+.wrap{max-width:1000px;margin:0 auto} /*zentriert den inhalt und setzt eine max breite */
+
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px} /*macht die obere leiste mit dem titel und dem link zur startseite */
+
+a.back{font-weight:600;text-decoration:none;color:#0a6} /*stilisiert den link zur startseite*/
+
+.card{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:start;border:1px solid #eee;border-radius:12px;padding:18px} /*macht die karte mit dem inhalt und dem bild*/
+
+img{width:100%;height:auto;border-radius:10px} /*macht das bild responsive und rundet die ecken ab*/
+
+@media (max-width:820px){.card{grid-template-columns:1fr}} /*macht die karte auf kleinen bilschirmen einspaltig*/
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top">
+<h1>Pinguin</h1>
+
+
+
+<a class="back" href="../index.html">Zurück zur Startseite</a>
+</div>
+
+
+<section class="card">
+
+<div>
+<h2>Steckbrief</h2>
+<p>Pinguine sind flugunfähige Seevögel, die hervorragend schwimmen und tauchen können. Die meisten Arten leben auf der Südhalbkugel, besonders in der Antarktis und im Südmeer.</p>
+
+
+<h3>Merkmale</h3>
+<ul>
+<li>Stromlinienförmiger Körper, Flügel als „Flossen“</li>
+<li>Dichtes Federkleid mit wasserabweisendem Öl</li>
+<li>Konterfärbung: dunkler Rücken, heller Bauch</li>
+</ul>
+
+
+<h3>Ernährung & Leben</h3>
+<p>Sie jagen vor allem Fische, Krill und Tintenfische. An Land watscheln sie oder rutschen auf dem Bauch („Tobogganing“). Kolonien können riesig sein.</p>
+
+
+<h3>Bekannte Arten</h3>
+<p>Kaiser‑, König‑, Esel‑, Adelie‑ und Felsenpinguin.</p>
+</div>
+
+
+<!-- RECHTS: Bild -->
+<div>
+<img src="../img/pinguin.jpg" alt= "Pinguin im Wasser" />
+</div>
+</section>
+</div>
+</body>
+</html>
