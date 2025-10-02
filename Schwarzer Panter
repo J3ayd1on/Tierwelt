@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Schwarzer Panther – Kurzinfos</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:24px;line-height:1.5}
+.wrap{max-width:1200px;margin:0 auto}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+a.back{font-weight:600;text-decoration:none;color:#0a6}
+/* Bild links, Text rechts – immer */
+.card{display:grid;grid-template-columns:1.3fr .7fr;grid-template-areas:"bild text";gap:20px;align-items:start;border:1px solid #eee;border-radius:12px;padding:18px}
+.card>div:first-child{grid-area:text} /* erstes DIV = Text (rechts) */
+.card>div:last-child{grid-area:bild} /* zweites DIV = Bild (links) */
+img{width:100%;height:auto;border-radius:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top">
+<h1>Schwarzer Panther</h1>
+<!-- Wenn diese Datei in /pages/ liegt, führt ../ zur Startseite in /src/ -->
+<a class="back" href="../index.html">Zurück zur Startseite</a>
+</div>
+
+
+<section class="card">
+<!-- RECHTS: Text (durch CSS in Spalte 2) -->
+<div>
+<h2>Was ist das?</h2>
+<p>Der Begriff <strong>Schwarzer Panther</strong> beschreibt keine eigene Art. Er wird für melanistische (sehr dunkel gefärbte) <em>Leoparden</em> (<em>Panthera pardus</em>) und <em>Jaguare</em> (<em>Panthera onca</em>) verwendet. Die Rosetten sind oft noch schwach sichtbar.</p>
+
+
+<h3>Lebensraum</h3>
+<p>Vor allem in dichten, schattigen Wäldern: melanistische Leoparden in Teilen Afrikas/Asiens, melanistische Jaguare in Mittel‑ und Südamerika.</p>
+
+
+<h3>Merkmale</h3>
+<ul>
+<li>Melanismus = mehr dunkles Pigment (Melanin)</li>
+<li>Sehr gute Kletterer (Leoparden), extrem kräftiger Biss (Jaguare)</li>
+<li>Nacht- und dämmerungsaktiv, hervorragende Tarnung im Unterholz</li>
+</ul>
+
+
+<h3>Ernährung</h3>
+<p>Vielseitige Beutegreifer: von Rehen/Wildschweinen (Leopard) bis zu Fischen und Schildkröten (Jaguar).</p>
+</div>
+
+
+
+<div>
+<img src="../img/angel-luciano-KFDaiLFEa9Y-unsplash.jpg" alt="Schwarzer Panther ">
+</div>
+</section>
+</div>
+</body>
+</html>
